@@ -11,6 +11,10 @@ function getApi() {
       return response.json();
     })
     .then(function (data) {
+      console.log(data)})
+      
+      //Get art image
+    .then(function (data) {
       // Get the baseimageurl from the API response
       var baseImageUrl = data.baseimageurl;
 
@@ -25,5 +29,21 @@ function getApi() {
 
       // Append the image element to the image-box
       imageBox.appendChild(imageElement);
-})}
+
+      // Get the description from the API response
+      var description = data.description;
+
+      // Create a new paragraph element for the description
+      var descriptionElement = document.createElement('p');
+
+      // Set the text content of the paragraph to the description
+      descriptionElement.textContent = description;
+
+      // Get the art-title-description-box element from the DOM
+      var descriptionBox = document.querySelector('.art-title-description-box');
+
+      // Append the description paragraph element to the description-box
+      descriptionBox.appendChild(descriptionElement);
+    });
+    }
 getApi()
