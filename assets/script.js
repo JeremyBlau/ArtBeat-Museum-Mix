@@ -11,6 +11,19 @@ function getApi() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data)
+      // Get the baseimageurl from the API response
+      var baseImageUrl = data.baseimageurl;
+
+      // Create a new image element
+      var imageElement = document.createElement('img');
+
+      // Set the src attribute of the image to the baseimageurl
+      imageElement.src = baseImageUrl;
+
+      // Get the image-box element from the DOM
+      var imageBox = document.querySelector('.image-box');
+
+      // Append the image element to the image-box
+      imageBox.appendChild(imageElement);
 })}
 getApi()
