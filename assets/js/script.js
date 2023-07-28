@@ -13,8 +13,7 @@ function getApi() {
         .then(function (data) {
             if(next){
               i++
-            }
-            if(!next && i >= 0){
+            } else if(!next && i > 0){
               i--
               }
           
