@@ -31,13 +31,13 @@ function getApi() {
           console.log(data)
           //Get art image
           var baseImageUrl = data.records[pictures].baseimageurl;
-          var imageElement = document.createElement('img');
+          var imageElement = document.querySelector('#img')
           imageElement.src = baseImageUrl;
           var imageBox = document.querySelector('.image-box');
           imageBox.appendChild(imageElement);
           //Get art description
           var description = data.records[pictures].caption;
-          var descriptionElement = document.createElement('p');
+          var descriptionElement = document.querySelector('#imgDesc');
           descriptionElement.textContent = description;
           var descriptionBox = document.querySelector('.art-title-description-box');
           descriptionBox.appendChild(descriptionElement)
