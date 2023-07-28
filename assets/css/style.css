@@ -1,6 +1,15 @@
-h1{
+#artbeat-icon{
+    border-radius: 10%;
+    margin: 5px;
     animation: heartBeat;
     animation-duration: 5s;
+}
+
+#title{
+    text-align: center;
+    position: relative;
+    top: -75px;
+    left: -300px;
 }
 
 img {
