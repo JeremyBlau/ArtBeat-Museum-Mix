@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual Art Museum </title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"/>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <!-- Header section -->
     <header>
-      <h1>ArtBeat Museum Mix</h1>
+      <h1 class="title is-2 is-spaced">ArtBeat Museum Mix</h1>
     </header>
   
     <!-- Main content section -->
     <main>
       <!-- Box for the description and title of the art -->
-      <div class="art-title-description-box"></div>
+      <div class="art-title-description-box subtitle is-4"></div>
       <!-- Box for API images -->
       <div class="image-box">
         <!-- Images fetched from API will be displayed here -->
@@ -24,9 +25,9 @@
   
       <!-- Buttons section -->
       <div class="buttons">
-        <button id="previous-btn">Previous Art</button>
-        <button id="play-pause-btn">Play/Pause Music</button>
-        <button id="next-btn">Next Art</button>
+        <button class="button is-primary is-outlined is-small is-responsive" id="previous-btn">Previous Art</button>
+        <button class="button is-info is-outlined is-small is-responsive" id="play-pause-btn">Play/Pause Music</button>
+        <button class="button is-primary is-outlined is-small is-responsive" id="next-btn">Next Art</button>
       </div>
   
       <!-- Box for displaying the currently playing music from the API -->
