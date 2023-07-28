@@ -21,14 +21,19 @@ function getApi() {
         })
         .then(function (data) {
           // Next and Previous button handling
-            if(next){
-              pictures++
-            } else if(!next && pictures > 0){
-              pictures--
+          if(next){
+            if(pictures < 99){
+                pictures++
+            } else {
+                pictures = 0
+            }
+          } else if(!next){
+              if(pictures > 0){
+                  pictures--
+              } else {
+                pictures = 99
               }
-          // End of Next and Previous button handling
-          console.log(pictures)
-          console.log(data)
+          }
           //Get art image
           var baseImageUrl = data.records[pictures].baseimageurl;
           var imageElement = document.querySelector('#img')
