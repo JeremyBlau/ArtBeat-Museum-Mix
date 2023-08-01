@@ -78,7 +78,7 @@ function getArtApi() {
           imageElement.src = baseImageUrl;
           var imageBox = document.querySelector('.image-box');
           imageBox.appendChild(imageElement);
-          //Get art description
+          //Get art caption
           var description = data.records[pictures].caption;
           var descriptionElement = document.querySelector('#imgDesc');
           descriptionElement.textContent = description;

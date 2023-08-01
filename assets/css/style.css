@@ -1,5 +1,6 @@
-body {
-  background-image: url('../graphics/Background\ 2.jpeg');
+main {
+  background-image: url('../graphics/CalmGrayBackground.jpeg');
+  background-size: cover;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 40px;
@@ -8,7 +9,7 @@ body {
 
 #artbeat-icon{
     border-radius: 10%;
-    margin: 5px;
+    margin: 15px 5px 5px 15px;
     animation: heartBeat;
     animation-duration: 5s;
 }
@@ -32,4 +33,9 @@ img {
   .art-title-description-box {
     font-family: 'Cinzel', serif;
   }
-  
+
+  .art-title-description-box {
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+  }
