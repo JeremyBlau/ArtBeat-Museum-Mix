@@ -1,4 +1,4 @@
-main {
+body {
   background-image: url('../graphics/Background\ 2.jpeg');
   padding-top: 10px;
   padding-bottom: 10px;
@@ -32,4 +32,4 @@ img {
   .art-title-description-box {
     font-family: 'Cinzel', serif;
   }
-  s
+  
