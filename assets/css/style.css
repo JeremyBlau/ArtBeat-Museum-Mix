@@ -1,5 +1,6 @@
 main {
-  background-image: url('../graphics/Background\ 2.jpeg');
+  background-image: url('../graphics/CalmGrayBackground.jpeg');
+  background-size: cover;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 40px;
