@@ -9,7 +9,7 @@ main {
 
 #artbeat-icon{
     border-radius: 10%;
-    margin: 15px 5px 5px 15px; /* Adjust the values to move the icon */
+    margin: 15px 5px 5px 15px;
     animation: heartBeat;
     animation-duration: 5s;
 }
