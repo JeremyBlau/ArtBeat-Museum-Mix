@@ -5,7 +5,6 @@ let prevBtn = document.querySelector('#previous-btn')
 let playBtn = document.querySelector('#play-pause-btn')
 let musicSearchBtn = document.querySelector('#musicSearchBtn')
 let musicSearch = document.querySelector('#musicSearch')
-let id = ''
 
 //Local Storage Error Handling
 if(localStorage.getItem('imageLastViewed')){
@@ -16,36 +15,37 @@ pictures = localStorage.getItem('imageLastViewed')
 
 
 function getMusicApi2() {
-  var requestUrl = 'https://freesound.org/apiv2/sounds/' + id + '?format=json&token=eODQqUqbbKKalG98FXSFz08TDqNwc9ntofNlR2TC'
+  var requestUrl = 'https://freesound.org/apiv2/sounds/' + id + '?format=json&token=eODQqUqbbKKalG98FXSFz08TDqNwc9ntofNlR2TC';
   
   fetch(requestUrl)
-  .then(function (response){
-    return response.json()
-  })
-  .then(function (data){
-    console.log(data)
-    let preview = data.previews.preview-hq-mp3
-    new Audio(preview)
-  })
+    .then(function (response){
+      return response.json();
+    })
+    .then(function (data){
+      console.log(data);
+      let preview = data.previews['preview-hq-mp3']; // Corrected property access using brackets
+      new Audio(preview).play(); // Play the audio preview
+    })
+    .catch(function (error) {
+      console.log('Error fetching data', error);
+    });
 }
 
-
 function getMusicApi() {
-  var requestUrl = 'https://freesound.org/apiv2/search/text/?query=' + musicSearch.value + '&token=eODQqUqbbKKalG98FXSFz08TDqNwc9ntofNlR2TC'
+  var requestUrl = 'https://freesound.org/apiv2/search/text/?query=' + musicSearch.value + '&token=eODQqUqbbKKalG98FXSFz08TDqNwc9ntofNlR2TC';
   
   fetch(requestUrl)
-  .then(function (response){
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data)
-    let id = data.results[2].id
-    console.log(id)
-    return id
-  })
-  .catch(function (error) {
-    console.log('Error fetching data', error)
-  })
+    .then(function (response){
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      id = data.results[2].id; // Assign the correct value to the global 'id' variable
+      console.log(id);
+    })
+    .catch(function (error) {
+      console.log('Error fetching data', error);
+    });
 }
 
 
