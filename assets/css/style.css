@@ -32,4 +32,9 @@ img {
   .art-title-description-box {
     font-family: 'Cinzel', serif;
   }
-  s
+
+  .art-title-description-box {
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+  }
