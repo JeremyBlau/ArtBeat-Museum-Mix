@@ -40,9 +40,20 @@ img {
     border-radius: 10px;
   }
 
+  .image-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }  
+
   .art-image {
     max-width: 100%;
     max-height: 1000px;
     width: auto;
     height: auto;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
   }
