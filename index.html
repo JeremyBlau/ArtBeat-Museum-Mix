@@ -25,27 +25,27 @@
       <div class="art-title-description-box subtitle is-4"></div>
       <!-- Box for API images --> 
       <div class="image-box">
-        <img id="img">
+        <img id="img" class="art-image">
         <p id="imgDesc">
-        <!-- Images fetched from API will be displayed here -->
+          <!-- Images fetched from API will be displayed here -->
+        </p>
       </div>
   
       <!-- Buttons section -->
       <div class="buttons">
         <button class="button is-primary is-outlined is-small is-responsive" id="previous-btn">Previous Art</button>
-        <input type="text" placeholder ="Enter your music search" id="musicSearch"/>
-        <button id="musicSearchBtn">Enter</button>
-        <button class="button is-info is-outlined is-small is-responsive" id="play-pause-btn">Play/Pause Music</button>
         <button class="button is-primary is-outlined is-small is-responsive" id="next-btn">Next Art</button>
+      </div>
+      <div class="buttons">
+        <input type="text" placeholder ="Search a music genre or sound" id="musicSearch" size="27"/>
+        <button class="button is-info is-outlined is-small is-responsive" id="musicSearchBtn">Search Music</button>
+        <button class="button is-info is-outlined is-small is-responsive" id="play-pause-btn">Play Music</button>
       </div>
   
       <!-- Box for displaying the currently playing music from the API -->
       <div class="music-box">
         <!-- Music information fetched from API will be displayed here -->
       </div>
-      <audio controls id="music-player">
-        Your browser does not support the audio element.
-      </audio>
     </main>
   
     <!-- Add any necessary scripts here -->
