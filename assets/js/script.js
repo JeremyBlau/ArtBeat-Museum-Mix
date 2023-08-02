@@ -104,8 +104,21 @@ prevBtn.addEventListener('click', function () {
   next = false
   return next
 })
-prevBtn.addEventListener('click', getArtApi)
-// End of next and previous button handling
+
+prevBtnArt.addEventListener('click', getArtApi)
+// Next and previous music api button handling
+nextBtnMusic.addEventListener('click', function(){
+  nextMusic = true
+  getMusicApi()
+  return nextMusic
+})
+
+prevBtnMusic.addEventListener('click', function(){
+  nextMusic = false
+  getMusicApi()
+  return nextMusic
+})
+
 musicSearchBtn.addEventListener('click', getMusicApi)
 playBtn.addEventListener('click', getMusicApi2)
 
