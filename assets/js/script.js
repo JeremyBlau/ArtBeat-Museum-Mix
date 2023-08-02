@@ -109,9 +109,9 @@ prevBtn.addEventListener('click', getArtApi)
 musicSearchBtn.addEventListener('click', getMusicApi)
 playBtn.addEventListener('click', getMusicApi2)
 
-// musicSearchBtn.addEventListener('click', function(){
-//   let musicSearch = musicSearch.value
-//   musicSearch +=
-//   console.log(musicSearch)
-//   return musicSearchInput
-// })
+musicSearchBtn.addEventListener('click', function(){
+  let musicSearch = musicSearch.value
+  musicSearch +=
+  console.log(musicSearch)
+  return musicSearchInput
+})
