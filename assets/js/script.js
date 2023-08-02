@@ -9,12 +9,14 @@ let musicSearchBtn = document.querySelector('#musicSearchBtn')
 let musicSearch = document.querySelector('#musicSearch')
 let nextBtnMusic = document.querySelector('#musicNextBtn')
 let prevBtnMusic = document.querySelector('#musicPreviousBtn')
+let musicBox = document.querySelector('.music-box')
 //Local Storage Error Handling
 if (localStorage.getItem('imageLastViewed')) {
   pictures = localStorage.getItem('imageLastViewed')
 } else {
   pictures = 0
 }
+// function for play button
 function getMusicApi2() {
   var requestUrl = 'https://freesound.org/apiv2/sounds/' + id + '?format=json&token=eODQqUqbbKKalG98FXSFz08TDqNwc9ntofNlR2TC';
   fetch(requestUrl)
@@ -23,6 +25,7 @@ function getMusicApi2() {
     })
     .then(function (data) {
       console.log(data);
+      musicBox.textContent = data.name;
       let preview = data.previews['preview-hq-mp3']; // Corrected property access using brackets
       new Audio(preview).play(); // Play the audio preview
       return preview
@@ -31,6 +34,7 @@ function getMusicApi2() {
       console.log('Error fetching data', error);
     });
 }
+// function for search, next and previous buttons
 function getMusicApi() {
   var requestUrl = 'https://freesound.org/apiv2/search/text/?query=' + musicSearch.value + '&token=eODQqUqbbKKalG98FXSFz08TDqNwc9ntofNlR2TC';
   fetch(requestUrl)
@@ -51,6 +55,7 @@ function getMusicApi() {
           music = 15
         }
       }
+      musicBox.textContent = "Press play!"
       id = data.results[music].id; // Assign the correct value to the global 'id' variable
       console.log(id);
       return id
