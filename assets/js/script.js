@@ -105,12 +105,12 @@ getArtApi()
 // Next and previous art api button handling
 nextBtnArt.addEventListener('click', function () {
   nextArt = true
-  return next
+  return nextArt
 })
 nextBtnArt.addEventListener('click', getArtApi)
 prevBtnArt.addEventListener('click', function () {
   nextArt = false
-  return next
+  return nextArt
 })
 prevBtnArt.addEventListener('click', getArtApi)
 // Next and previous music api button handling
