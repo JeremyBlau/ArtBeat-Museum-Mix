@@ -185,14 +185,12 @@ prevBtnArt.addEventListener('click', getArtApi)
 nextBtnMusic.addEventListener('click', function(){
   nextMusic = true
   getMusicApi()
-  getMusicApi2()
   return nextMusic
 })
 
 prevBtnMusic.addEventListener('click', function(){
   nextMusic = false
   getMusicApi()
-  getMusicApi2()
   return nextMusic
 })
 
