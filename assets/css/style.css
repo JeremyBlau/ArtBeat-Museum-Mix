@@ -76,11 +76,6 @@ h1 {
   justify-content: center;
 }
 
-#musicSearchBtn {
-  max-height: 1000px !important;
-  background-color: #ff9800;
-}
-
 footer {
   background-image: url('../graphics/Header.jpeg');
   background-size: cover;
