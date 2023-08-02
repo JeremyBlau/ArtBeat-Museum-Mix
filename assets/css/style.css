@@ -29,14 +29,13 @@ img {
   h1 {
     font-family: 'Cinzel', serif;
   }
-  
-  .art-title-description-box {
-    font-family: 'Cinzel', serif;
-  }
 
   .art-title-description-box {
+    font-family: 'Cinzel', serif;
     background-color: white;
-    display: inline-block;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
     border-radius: 10px;
   }
 
@@ -54,6 +53,11 @@ img {
   }
 
   .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  #imgDesc {
     display: flex;
     justify-content: center;
   }
