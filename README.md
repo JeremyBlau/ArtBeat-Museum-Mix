@@ -2,7 +2,7 @@
 Let any user listen music samples and explore a virtual Harvard Art Museum.
 
 Screenshots
-![image](https://github.com/JeremyBlau/Coding-quiz/assets/134236414/507dbea1-a7fe-4637-970c-d10118efc99b)
+![image](https://github.com/JeremyBlau/ArtBeats/assets/134236414/ff956d19-42a5-4a81-bce2-2f97fc2e0c00)
 
 ## Deployment
 The application is deployed and can be accessed through the following link: [Deployed Application](https://jeremyblau.github.io/ArtBeats/)
@@ -26,7 +26,7 @@ Contributors for this Project include:
 This project is licensed under the MIT LICENSE.
 
 ## Acknowledgements
-NA
+Special thanks to the Harvard Art Library and Freesound APIs!
 
 ## Contact
 If you have any questions, or suggestions, or just want to say hi, you can reach me at jwblau2@gmail.com.
